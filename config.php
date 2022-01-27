@@ -1,10 +1,8 @@
 <?php
-$mysql = new mysqli('localhost', 'root','', 'blog');
+
+$mysql = new mysqli('localhost', 'root', '', 'blog');
 $mysql->set_charset('utf8');
 
-if($mysql == FALSE)
-{
-    echo 'Erro de conexao com o banco de dados';
+if ($mysql == FALSE) {
+    echo "Erro na conexão";
 }
-
-?>
